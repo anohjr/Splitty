@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import "./LoginForm.scss";
-import googleIcon from "../../../assets/portal_page/google_icon.svg";
-import facebookIcon from "../../../assets/portal_page/facebook_icon.svg";
 import emailLogo from "../../../assets/portal_page/email_logo.svg";
 import passwordLogo from "../../../assets/portal_page/password_logo.svg";
 import LoginInput from "./login_input/LoginInput";
+import SocialIcon from "../social_icon/socialIcon";
+import FormFooter from "../form_footer/formFooter";
 
 export default function LoginForm() {
   const [password, setPassword] = useState(null);
@@ -16,24 +16,11 @@ export default function LoginForm() {
   };
 
   return (
-    <div id="loginForm">
-      <div id="sign_in_header">
-        <div id="signIn">Sign in</div>
-        <div id="socials">
-          <div className="social_icon">
-            <img
-              id="google_icon"
-              src={googleIcon}
-              alt="icon for google authentication"
-            />
-          </div>
-          <div className="social_icon">
-            <img
-              id="facebook_icon"
-              src={facebookIcon}
-              alt="icon for facebook authentication"
-            />
-          </div>
+    <div className="form">
+      <div className="form_header">
+        <div className="formTitle">Sign in</div>
+        <div className="socials">
+          <SocialIcon />
         </div>
       </div>
       <form onSubmit={loginSubmit} id="login_inputs">
@@ -52,7 +39,7 @@ export default function LoginForm() {
         <input id="submit_login" type="submit" value="Log in" />
         <div id="forgot_password">Forgot password ?</div>
       </form>
-      <div id="loginFooter">Privacy Policy</div>
+      <FormFooter />
     </div>
   );
 }

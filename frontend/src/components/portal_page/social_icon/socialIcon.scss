@@ -1,0 +1,17 @@
+.social_icon {
+    // Layout
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex; justify-content: center;
+    // Style
+    border-radius: 100%;
+    background-color: #024352;
+    cursor: pointer;
+
+    #google_icon {
+        width: 20px;
+    }
+    #facebook_icon {
+        width: 25px;
+    }
+}

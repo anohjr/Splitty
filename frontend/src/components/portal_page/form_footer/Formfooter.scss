@@ -1,0 +1,16 @@
+.formFooter {
+    // Layout
+    position: absolute;
+    bottom: 0; margin-bottom: 1.5rem;
+    // Typo
+    font-size: small;
+    // Style
+    transition: 250ms ease;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+    
+}

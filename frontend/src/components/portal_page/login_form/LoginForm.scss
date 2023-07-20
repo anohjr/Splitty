@@ -1,38 +1,20 @@
-#loginForm {
+.form {
     width: 40%; height: 100%;
     display: flex; flex-direction: column;
     justify-content: center; align-items: center;
 
-    #sign_in_header {
+    .form_header {
         display: flex; flex-direction: column;
         gap: 1rem;
         align-items: center;
 
-        #signIn {
+        #formTitle {
             font-size: x-large;
         }
 
-        #socials {
+        .socials {
             display: flex; 
             gap: 0.5rem;
-
-            .social_icon {
-                // Layout
-                width: 3rem;
-                aspect-ratio: 1/1;
-                display: flex; justify-content: center;
-                // Style
-                border-radius: 100%;
-                background-color: #024352;
-                cursor: pointer;
-
-                #google_icon {
-                    width: 20px;
-                }
-                #facebook_icon {
-                    width: 25px;
-                }
-            }
         }
     }
 
@@ -69,22 +51,5 @@
                 opacity: 1;
             }
         }
-    }
-
-    #loginFooter {
-        // Layout
-        position: absolute;
-        bottom: 0; margin-bottom: 1.5rem;
-        // Typo
-        font-size: small;
-        // Style
-        transition: 250ms ease;
-        opacity: 0.5;
-        cursor: pointer;
-
-        &:hover {
-            opacity: 1;
-        }
-        
     }
 }
