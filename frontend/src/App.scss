@@ -1,6 +1,24 @@
+@import './_variables';
+@font-face {
+  font-family: Satoshi-light;
+  src: url(./Fonts/OTF/Satoshi-Light.otf);
+}
+@font-face {
+  font-family: Satoshi-regular;
+  src: url(./Fonts/OTF/Satoshi-Regular.otf);
+}
+@font-face {
+  font-family: Satoshi-medium;
+  src: url(./Fonts/OTF/Satoshi-Medium.otf);
+}
+@font-face {
+  font-family: Satoshi-bold;
+  src: url(./Fonts/OTF/Satoshi-Bold.otf);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: Satoshi-regular, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;

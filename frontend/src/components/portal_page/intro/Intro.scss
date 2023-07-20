@@ -1,0 +1,70 @@
+@import "../../../_variables";
+
+#intro {
+    height: 100%;
+    width: 60%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(213, 205, 192, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url('../../../assets/portal_page/friends_forest.jpg'), lightgray 50%;
+    background-size: cover; background-position: center;
+
+    #middle_intro {
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+        gap: 1rem;
+
+        img {
+            width: 22rem;
+        }
+    
+        #appSubtitle {
+            // Layout
+            display: flex;
+            width: 22rem;
+            // Typo
+            font-family: Satoshi-medium; 
+            font-size: x-large;
+            text-align: center;
+            // Style
+            background: linear-gradient(270deg, #4FDEFF 0%, #FFF 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    
+        #signupButton {
+            // Layout 
+            width: 11rem;
+            height: 3rem;
+            margin-top: 2rem;
+            display: flex; align-items: center;
+            justify-content: center;
+            // Typo
+            font-family: Satoshi-medium; 
+            color: white;
+            font-size: larger;
+            // Style
+            border-radius: 2.5rem;
+            border: 1px solid #FFF;
+            background: rgba(217, 217, 217, 0.30);
+        }
+    }
+
+    #introFooter {
+        position: absolute;
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        gap: 1rem;
+        bottom: 0; margin-bottom: 1.5rem;
+
+        img {
+            width: 35px;
+        }
+
+        div {
+            font-size: small;
+            color: white;
+            opacity: 0.5;
+        }
+    }
+}
