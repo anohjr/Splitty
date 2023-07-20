@@ -34,7 +34,7 @@
     
         #signupButton {
             // Layout 
-            width: 11rem;
+            width: 10rem;
             height: 3rem;
             margin-top: 2rem;
             display: flex; align-items: center;
@@ -47,6 +47,7 @@
             border-radius: 2.5rem;
             border: 1px solid #FFF;
             background: rgba(217, 217, 217, 0.30);
+            cursor: pointer;
         }
     }
 
@@ -59,12 +60,19 @@
 
         img {
             width: 35px;
+            cursor: pointer;
         }
 
         div {
             font-size: small;
             color: white;
             opacity: 0.5;
+            transition: 250ms ease;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 }
