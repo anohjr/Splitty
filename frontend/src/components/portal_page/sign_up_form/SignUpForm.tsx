@@ -1,13 +1,17 @@
-import React from "react";
 import { useState } from "react";
 import "./SignUpForm.scss";
 import SocialIcon from "../social_icon/socialIcon";
 import FormInput from "../form_input/FormInput";
+
 import userLogo from "../../../assets/portal_page/user_logo.svg";
 import mailLogo from "../../../assets/portal_page/mail_logo.svg";
 import passwordLogo from "../../../assets/portal_page/password_logo.svg";
 
-export default function SignInForm({ signInUp }) {
+type SignInFormProps = {
+  signInUp: boolean
+}
+
+export default function SignInForm({ signInUp }: SignInFormProps) {
   const [userName, setUserName] = useState(null);
   const [userMail, setUserMail] = useState(null);
   const [userPassword, setUserPassword] = useState(null);

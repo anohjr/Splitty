@@ -1,4 +1,3 @@
-import React from "react";
 import "./socialIcon.scss";
 import googleIcon from "../../../assets/portal_page/google_icon.svg";
 import facebookIcon from "../../../assets/portal_page/facebook_icon.svg";

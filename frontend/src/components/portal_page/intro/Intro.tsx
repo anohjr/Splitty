@@ -1,9 +1,13 @@
-import React from "react";
 import splittyLogo from "../../../assets/splitty_logo.svg";
 import nightModeWhite from "../../../assets/portal_page/night_mode_white.svg";
 import "./Intro.scss";
 
-export default function Intro({ signInUp, setSignInUp }) {
+type IntroProps = {
+  signInUp: boolean;
+  setSignInUp: (value: boolean) => void;
+};
+
+export default function Intro({ signInUp, setSignInUp }: IntroProps) {
   return (
     <div id="intro">
       <div id="middle_intro">
