@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./LoginForm.scss";
-
 import userLogo from "../../../assets/portal_page/user_logo.svg";
 import passwordLogo from "../../../assets/portal_page/password_logo.svg";
 import FormInput from "../form_input/FormInput";
@@ -11,8 +10,8 @@ type LoginFormProps = {
 };
 
 export default function LoginForm({ signInUp }: LoginFormProps) {
-  const [password, setPassword] = useState(null);
-  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState<string | null>(null);
+  const [email, setEmail] = useState<string | null>(null);
 
   const loginSubmit = () => {
     return;

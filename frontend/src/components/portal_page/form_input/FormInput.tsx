@@ -1,4 +1,5 @@
 import "./FormInput.scss";
+
 type FormInputProps = {
   type: any;
   value: any;
@@ -7,7 +8,13 @@ type FormInputProps = {
   placeHolder: string;
 };
 
-export default function FormInput({ type, value, setValue, logo, placeHolder }: FormInputProps) {
+export default function FormInput({
+  type,
+  value,
+  setValue,
+  logo,
+  placeHolder,
+}: FormInputProps) {
   return (
     <div className="input_container">
       <img src={logo} />

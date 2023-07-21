@@ -12,10 +12,10 @@ type SignInFormProps = {
 }
 
 export default function SignInForm({ signInUp }: SignInFormProps) {
-  const [userName, setUserName] = useState(null);
-  const [userMail, setUserMail] = useState(null);
-  const [userPassword, setUserPassword] = useState(null);
-  const [userConfirmPassword, setUserConfirmPassword] = useState(null);
+  const [userName, setUserName] = useState<string | null>(null);
+  const [userMail, setUserMail] = useState<string | null>(null);
+  const [userPassword, setUserPassword] = useState<string | null>(null);
+  const [userConfirmPassword, setUserConfirmPassword] = useState<string | null>(null);
 
   const signUpSubmit = () => {
     return;
