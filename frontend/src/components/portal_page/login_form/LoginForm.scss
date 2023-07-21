@@ -1,8 +1,19 @@
-.form {
-    width: 40%; height: 100%;
-    display: flex; flex-direction: column;
-    justify-content: center; align-items: center;
+.login_form {
+    left: 0; 
+    opacity: 1;
+    transform: scale(1);
+}
+.login_form_none {
+    left: -100%;
+    opacity: 0;
+    transform: scale(0.9);
+}
 
+.form_container {
+   position: absolute;
+   width: 100%;
+   transition: 0.5s ease;
+   
     .form_header {
         display: flex; flex-direction: column;
         gap: 1rem;
@@ -18,14 +29,13 @@
         }
     }
 
-    #login_inputs {
+    #form_inputs {
         display: flex; flex-direction: column;
         align-items: center;
         margin-top: 2rem;
         gap: 2.5rem;
-        width: 52%;
 
-        #submit_login {
+        .submit_form {
             // Layout
             margin-top: 0.5rem;
             width: 10rem;
@@ -53,3 +63,4 @@
         }
     }
 }
+     
